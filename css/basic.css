@@ -1,0 +1,49 @@
+body {
+	background-color: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 2px dotted black;
+	padding: 10px 10px 10px 10px;
+	font-family: sans-serif;
+}
+
+div.menuitem {
+	display: flex; /* 이게 뭔지 설명을 해야 이해를 해서 쓰든 말든 하지 */
+	height: 9em;
+}
+/* >>블럭..? */
+
+
+div.menuitem h2 {
+	display: flex;
+	width: 20em;
+	padding-right: 3em;
+}
+/* >>뭔가 h2가 함께 한 줄로 묶인듯함 */
+
+
+div.menuitem p {
+	width: 90%;
+	font-size: 14pt;
+	display: none;
+}
+/* >>마찬가지로 paragraph가 묶인 느낌 */
+
+
+div.menuitem p img {
+	float: left;
+	margin: 3px 30px 3px 60px;
+}
+/* Img랑 일반 paragraph랑 따로 빼는 느낌 */
+
+
+div.menuitem h2:hover{
+	color: cyan;
+	background-color: black;
+}
+/* 포인터시 Hilighting
+hover = 마우스가 위에 가있을때 동작 */
+
+div.menuitem h2:hover +p{
+	display: block;
+}
