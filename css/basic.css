@@ -8,10 +8,9 @@ body {
 }
 
 div.menuitem {
-	display: flex; /* 이게 뭔지 설명을 해야 이해를 해서 쓰든 말든 하지 */
+	display: flex; 
 	height: 9em;
 }
-/* >>블럭..? */
 
 
 div.menuitem h2 {
@@ -19,7 +18,6 @@ div.menuitem h2 {
 	width: 20em;
 	padding-right: 3em;
 }
-/* >>뭔가 h2가 함께 한 줄로 묶인듯함 */
 
 
 div.menuitem p {
@@ -27,14 +25,13 @@ div.menuitem p {
 	font-size: 14pt;
 	display: none;
 }
-/* >>마찬가지로 paragraph가 묶인 느낌 */
+
 
 
 div.menuitem p img {
 	float: left;
 	margin: 3px 30px 3px 60px;
 }
-/* Img랑 일반 paragraph랑 따로 빼는 느낌 */
 
 
 div.menuitem h2:hover{
