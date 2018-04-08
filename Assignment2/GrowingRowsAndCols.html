@@ -1,0 +1,38 @@
+<body>
+<p>인터넷응용및실습 2018 봄학기 과제2 (조재은)</p>
+<input type='submit' id='addRow' value='행 추가'>
+<input type='submit' id='addCol' value='열 추가'>
+
+<form class='row'><input type='checkbox'></form>
+<script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+<script>var addRow = document.querySelector('#addRow');
+var addCol = document.querySelector('#addCol');
+
+addRow.addEventListener('click', function() {
+  var form = document.querySelector('.row');
+  document.body.appendChild( form.cloneNode(true) );
+  
+  console.log(document.body);
+});
+
+addCol.addEventListener('click', function() {
+  var baseElement = document.querySelector('form');
+  var form = baseElement.querySelector('form input');
+  //form = <input type='checkbox'>
+  
+  //document.getElementsByClassName('row')[0].appendChild( form.cloneNode(true) );
+ 
+  var target = document.querySelector('.row');
+  //console.log(target.length);
+  
+  for (var i=0 ; i<target.length ; i++) {if (window.CP.shouldStopExecution(1)){break;}
+    document.getElementsByClassName('row')[i].appendChild( form.cloneNode(true) );
+  }
+window.CP.exitedLoop(1);
+
+  
+  //console.log(document.body);
+});
+//# sourceURL=pen.js
+</script>
+</body>
