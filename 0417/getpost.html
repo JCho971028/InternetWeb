@@ -28,7 +28,7 @@
   </script>
 
   <p>
-    <form>
+    <form action ="javascript:void(0)">
       <label>URL:</label>
       <input id="url" type="text">
       <input id="urlsubmit" type="submit" value="GET/POST 폼 생성">
@@ -46,7 +46,7 @@
     var tplTarget = document.querySelector('#templateTarget');
 
     function generateforms() {
-      tplTarget.innerHTML = tpl({url:'안기영'});
+      tplTarget.innerHTML = tpl(document.querySelector('#url').value);
     }
 
     var urlsubmit = document.querySelector('#urlsubmit');
